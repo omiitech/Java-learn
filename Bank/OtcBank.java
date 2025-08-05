@@ -55,31 +55,3 @@ public class OtcBank {
         sc.close();
     }
 }
-public class Bank {
-    int balance;
-    String name;
-
-    public Bank(String name, int initialBalance) {
-        this.name = name;
-        this.balance = initialBalance;
-    }
-
-    public void deposit(int amount) {
-        balance += amount;
-        System.out.println("Deposited: $" + amount);
-    }
-
-    public void withdraw(int amount) {
-        balance -= amount;
-        System.out.println("Withdrawn: $" + amount);
-    }
-
-    public void showBalance() {
-        System.out.println(name + ", your balance is: $" + balance);
-    }
-
-    @Override
-    public String toString() {
-        return "Bank Account: " + name + ", Balance: $" + balance;
-    }
-}
